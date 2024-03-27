@@ -4,7 +4,7 @@ node {
         checkout scm
     }
     stage('Build image') {
-       app = docker.build("Matejtod23/DevOps-Jenkins")
+       app = docker.build("Matejtod23/kiiijenkins")
     }
     stage('Push image') {   
         docker.withRegistry('https://registry.hub.docker.com', 'DockerDesktop') {
